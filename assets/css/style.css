@@ -8,3 +8,35 @@
 body {
     background-color: #efeef5;
 }
+.header {
+    padding: 20px 35px;
+    background-color: #0612bb;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+
+.header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #b4dbb1;
+    margin: 0;
+}
+
+.header div ul li {
+    display: inline-block;    
+    margin-left: 25px;    
+}
+
+.header div ul li a {
+    color: #efeef5;
+}
+
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
