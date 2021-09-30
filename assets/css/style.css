@@ -59,12 +59,17 @@ section {
     justify-content: space-between;
     padding: 20px;
     width: 89%;
-    margin: 0 20px 0 20px;
+    margin: 0 40px 0 40px;
     top: 0;
     line-height: 1.5;
     height: 400px;
-    border: 2px solid #00010e;
-  
+    border: 2px solid #00010e;  
+}
+
+.me-statement {
+    width: 40%; 
+    font-size: 20px;
+    margin: 0 20px 0 20px;
 }
 
 /* About me Format Ends */
@@ -83,10 +88,10 @@ section {
     justify-content: space-between;
     padding: 20px;
     width: 89%;
-    margin: 0 20px 0 20px;
+    margin: 0 40px 0 40px;
     top: 0;
     line-height: 1.5;
-    height: 400px;
+    height: 600px;
     border: 2px solid #00010e;
 }
 
@@ -94,14 +99,112 @@ section {
     margin: 0 20px;
 }
 
+.works .link-one a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 3.55vw;
+    color: #c6e030; 
+        /* Shadowing configurations */
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  
+}
+
+.link-one {
+    background-image: url("../images/hero-bg.jpg");    
+    background-size: cover;
+    background-position: 80%;    
+    border-radius: 15px;
+    width: 40%;
+    height: 45%;
+    margin: 20px;
+}
+
+.works .link-two a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 3.55vw;
+    color: #db2323; 
+        /* Shadowing configurations */
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  
+}
+
+.link-two {
+    background-image: url("../images/usmc.jpg"); 
+    background-size: auto;
+    background-position: 80%;
+    border-radius: 15px;
+    font-size: 3.55vw;
+    width: 40%;
+    height: 45%;
+    margin: 20px;    
+}
+
+
+.works .link-three a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 2.55vw;
+    color: #1b18a3; 
+        /* Shadowing configurations */
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  
+}
+
+.link-three {
+    background-image: url("../images/yellowstone.jpg"); 
+    background-size: cover;
+    background-position: 80%;
+    border-radius: 15px;
+    font-size: 3.55vw;
+    width: 40%;
+    height: 45%;
+    margin: 20px;    
+}
+
+.works .link-four a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 2.55vw;
+    color: #bfcfb7; 
+        /* Shadowing configurations */
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  
+}
+
+.link-four {
+    background-image: url("../images/wwi.jpg"); 
+    background-size: cover;
+    background-position: 80%;
+    border-radius: 15px;
+    font-size: 3.55vw;
+    width: 40%;
+    height: 45%; 
+    margin: 20px;   
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
 /* Work Format Ends */
 
 /* Contact Information Format Begins */
 .contact-form {
     display: flex;
-    justify-content: right;
-    
- 
+    justify-content: right; 
 }
 
 .contact {
@@ -109,9 +212,9 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
-    width: 89%;
-    margin: 0 20px 0 0;
+    /*padding: 20px; */
+    width: 104%;
+    margin: 0 45px 0 25px;
     top: 0;
     line-height: 1.5;
     height: 400px;
@@ -119,7 +222,90 @@ section {
 }
 
 .contact-form h2 {
-    margin: 0 0 0 0;
+    margin: 0 10px 0 0;
+    
+    
 }
 
 /*Contact Information Format Ends */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER  */
+
+@media screen and (max-width: 980px) {
+    
+    .me {
+        padding: 0;
+        height: auto;    
+    }
+    .me-form {
+        display: inline-flex;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;        
+    }
+
+    .section-about-me {
+        padding: 10px 0 10px 30px;
+        font-size: 45px;
+    }
+
+    .me-statement {
+        width: 90%;
+        padding: 0 10px 10px 30px;
+        font-size: 30px;
+    } 
+}
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER  */
+@media screen and (max-width: 768px) {
+    .me {
+        padding: 0;
+        height: auto;  
+        line-height: 2.5;  
+    }
+    .me-form {
+        display: inline-flex;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;        
+    }
+    
+    .section-about-me {
+        padding: 10px 0 10px 30px;
+        font-size: 20px;
+    }
+    
+    .me-statement {
+        width: 90%;
+        padding: 0 10px 10px 30px;
+        font-size: 20px;
+    } 
+}
+
+
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER 
+@media screen and (max-width: 575px) {
+    .me {
+        padding: 0 0 0 0;
+        height: auto;
+    }
+    .me-form {
+        display: inline-flex;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;        
+    }
+
+    .section-about-me {
+        padding: 10px 0 10px 30px;
+        font-size: 45px;
+    }
+
+    .me-statement {
+        width: 80%;
+        padding: 0 10px 10px 30px;
+        font-size: 25px;
+    }
+}  */
