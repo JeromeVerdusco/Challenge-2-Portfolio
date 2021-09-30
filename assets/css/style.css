@@ -45,6 +45,13 @@ section {
     padding: 60px;
 }
 
+/* resume formatting begins */
+.under {
+    
+}
+
+/* resume formatting ends */
+
 /* About Me Format Begins */
 .me-form {
     display: flex;
@@ -316,6 +323,27 @@ section {
         padding: 0 10px 10px 30px;
         font-size: 30px;
         height: 150px;
+    }
+
+    .contact {
+        height: auto;
+        padding: 5px;
+        width: 79%;
+    }
+
+    .contact p {
+        padding: 50px;
+        display: inline-block;       
+    }
+
+    .section-contact {
+        padding: 10px 0 10px 30px;
+        font-size: 45px;
+    }
+
+    .contact-form h2 {
+        padding: 10px 0 10px 70px;
+        margin: 0 20px;
     }
 }
 

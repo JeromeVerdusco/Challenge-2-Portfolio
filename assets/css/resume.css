@@ -1,0 +1,8 @@
+*{
+    padding: 25px;
+    margin: 25px;
+    box-sizing: border-box;
+    font-size: 150px;
+    background-color: blue;
+    color: red;
+}
