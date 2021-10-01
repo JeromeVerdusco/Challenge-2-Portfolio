@@ -45,12 +45,6 @@ section {
     padding: 60px;
 }
 
-/* resume formatting begins */
-.under {
-    
-}
-
-/* resume formatting ends */
 
 /* About Me Format Begins */
 .me-form {
@@ -95,7 +89,7 @@ section {
     justify-content: space-between;
     padding: 20px;
     width: 89%;
-    margin: 0 90px 0 90px;
+    margin: 0 40px 0 40px;
     top: 0;
     line-height: 1.5;
     height: 600px;
@@ -211,7 +205,7 @@ section {
 /* Contact Information Format Begins */
 .contact-form {
     display: flex;
-    justify-content: right; 
+    justify-content: left; 
 }
 
 .contact {
@@ -221,16 +215,13 @@ section {
     justify-content: space-around;
     padding: 30px; 
     width: 104%;
-    margin: 0 29px 0 15px;
+    margin: 0 40px 0 40px;
     top: 0;
     line-height: 1.5;
     height: 110px;
     border: 2px solid #00010e;
 }
 
-.contact-form h2 {
-    margin: 0 10px 0 0;    
-}
 
 .phone {
     font-size: 25px;
@@ -275,9 +266,10 @@ section {
     } 
 
     .works {
-        padding: 5px;
+        padding: 3px;
         height: auto;
-        width: 79%;
+        width: 89%;
+        margin: 0 0 0 35px;
     }
 
     .work-form {
@@ -288,7 +280,7 @@ section {
     }
 
     .work-form h2 {
-        padding: 10px 0 10px 70px;
+        padding: 10px 0 10px 15px;
         font-size: 45px;
     }
 
@@ -327,8 +319,9 @@ section {
 
     .contact {
         height: auto;
-        padding: 5px;
-        width: 79%;
+        padding: 3px;
+        width: 89%;
+        margin: 0 0 0 35px;
     }
 
     .contact p {
@@ -372,15 +365,92 @@ section {
         padding: 0 10px 10px 30px;
         font-size: 20px;
     } 
+
+    /* need to format all below */
+    
+    .works {
+        padding: 3px;
+        height: auto;
+        width: 89%;
+        margin: 0 0 0 35px;
+    }
+
+    .work-form {
+        display: inline-flex;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
+    }
+
+    .work-form h2 {
+        padding: 10px 0 10px 15px;
+        font-size: 45px;
+    }
+
+    .section-work {
+        padding: 10px 0 10px 30px;
+        font-size: 45px;
+    }
+
+    .link-one {
+        width: 90%;
+        padding: 0 10px 10px 30px;
+        font-size: 30px;
+        height: 150px;
+    }
+
+    .link-two {
+        width: 90%;
+        padding: 0;
+        font-size: 30px;  
+        height: 150px;      
+    }
+
+    .link-three {
+        width: 90%;
+        padding: 0 10px 10px 30px;
+        font-size: 30px;
+        height: 150px;
+    }
+
+    .link-four {
+        width: 90%;
+        padding: 0 10px 10px 30px;
+        font-size: 30px;
+        height: 150px;
+    }
+
+    .contact {
+        height: auto;
+        padding: 3px;
+        width: 89%;
+        margin: 0 0 0 35px;
+    }
+
+    .contact p {
+        padding: 50px;
+        display: inline-block;       
+    }
+
+    .section-contact {
+        padding: 10px 0 10px 30px;
+        font-size: 45px;
+    }
+
+    .contact-form h2 {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 
 
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER 
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER  */
 @media screen and (max-width: 575px) {
     .me {
-        padding: 0 0 0 0;
-        height: auto;
+        padding: 0;
+        height: auto;  
+        line-height: 2.5;  
     }
     .me-form {
         display: inline-flex;
@@ -388,15 +458,94 @@ section {
         height: auto;
         width: 100%;        
     }
-
+    
     .section-about-me {
+        padding: 10px 0 10px 30px;
+        font-size: 30px;
+    }
+    
+    .me-statement {
+        width: 90%;
+        padding: 0 10px 10px 30px;
+        font-size: 16px;
+    } 
+
+       
+    .works {
+        padding: 3px;
+        height: auto;
+        width: 89%;
+        margin: 0 0 0 35px;
+    }
+
+    .work-form {
+        display: inline-flex;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
+    }
+
+    .work-form h2 {
+        padding: 10px 0 10px 15px;
+        font-size: 45px;
+    }
+
+    .section-work {
         padding: 10px 0 10px 30px;
         font-size: 45px;
     }
 
-    .me-statement {
-        width: 80%;
+    .link-one {
+        width: 90%;
         padding: 0 10px 10px 30px;
-        font-size: 25px;
+        font-size: 30px;
+        height: 150px;
     }
-}  */
+
+    .link-two {
+        width: 90%;
+        padding: 0;
+        font-size: 30px;  
+        height: 150px;      
+    }
+
+    .link-three {
+        width: 90%;
+        padding: 0 10px 10px 30px;
+        font-size: 30px;
+        height: 150px;
+    }
+
+    .link-four {
+        width: 90%;
+        padding: 0 10px 10px 30px;
+        font-size: 30px;
+        height: 150px;
+    }
+
+    .contact {
+        height: auto;
+        padding: 3px;
+        width: 70%;
+        
+    }
+
+    .contact p {
+        padding: 50px;
+        display: inline-block;       
+    }
+
+    .section-contact {
+        padding: 10px 0 10px 30px;
+        font-size: 35px;
+    }
+
+    .email {
+        font-size: 22px;
+    }
+
+    .contact-form h2 {
+        padding: 0;
+        margin: 0;
+    }
+}  
